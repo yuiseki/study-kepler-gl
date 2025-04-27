@@ -11,7 +11,7 @@ const rootReducer = combineReducers({
 // react-palm → kepler.gl のタスク処理ミドルウェア
 const middleware = [taskMiddleware, enhanceReduxMiddleware([])];
 
-const store = configureStore({
+export const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefault) => getDefault().concat(middleware),
   devTools: process.env.NODE_ENV !== "production",

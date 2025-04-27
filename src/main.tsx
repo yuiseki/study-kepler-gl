@@ -9,6 +9,7 @@ import keplerGlReducer, { enhanceReduxMiddleware } from "@kepler.gl/reducers";
 import KeplerGl from "@kepler.gl/components";
 
 import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
+import AiAssistant from "@kepler.gl/ai-assistant";
 
 const reducers = combineReducers({
   keplerGl: keplerGlReducer.initialState({
@@ -38,6 +39,19 @@ const App = () => (
       height: "100%",
     }}
   >
+    {/* 
+    <AiAssistant
+      id="assistant"
+      mapId="map"
+      dispatch={store.dispatch}
+      apiKey={import.meta.env.VITE_OPENAI_API_KEY}
+      theme="dark"
+      useMarkdown={true}
+      showTools={true}
+      modelProvider="ollama"
+      model="gemma3:4b"
+    />
+    */}
     <AutoSizer>
       {({ height, width }) => (
         <KeplerGl

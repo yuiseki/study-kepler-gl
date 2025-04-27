@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@kepler.gl/ai-assistant": "^3.1.1",
     "@kepler.gl/components": "^3.1.1",
     "@kepler.gl/reducers": "^3.1.1",
+    "@openassistant/core": "^0.3.0",
     "@reduxjs/toolkit": "^2.7.0",
     "@types/react-redux": "^7.1.34",
     "@types/react-virtualized": "^9.22.2",
     "kepler.gl": "^3.1.1",
+    "ollama-ai-provider": "^1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-palm": "^3.3.8",

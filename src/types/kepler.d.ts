@@ -38,6 +38,20 @@ declare module "@kepler.gl/components" {
   export default KeplerGl;
 }
 
+declare module "@kepler.gl/ai-assistant" {
+  import { Component, ComponentProps, ReactNode } from "react";
+
+  interface AiAssistantProps {
+    id?: string;
+    keplerGlId?: string;
+    children?: ReactNode;
+    [key: string]: any;
+  }
+
+  export class AiAssistant extends Component<AiAssistantProps> {}
+  export default AiAssistant;
+}
+
 declare module "react-palm/tasks" {
   export const taskMiddleware: any;
 }
