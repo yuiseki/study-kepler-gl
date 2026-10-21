@@ -23,7 +23,7 @@
     "react-dom": "^19.0.0",
     "react-palm": "^3.3.8",
     "react-redux": "^9.2.0",
-    "react-virtualized": "^9.22.6",
+    "react-virtualized": "^10.0.0",
     "redux": "^5.0.1"
   },
   "devDependencies": {
